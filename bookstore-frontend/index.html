@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pageturner Books</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand" data-nav="browse">📚 Pageturner</div>
+
+    <div class="search-bar">
+      <input id="searchInput" type="text" placeholder="Search by title or author..." />
+      <select id="categoryFilter"><option value="">All categories</option></select>
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <nav class="nav-links">
+      <a href="#" data-nav="browse">Browse</a>
+      <a href="#" data-nav="cart">Cart <span id="cartCount" class="badge">0</span></a>
+      <a href="#" data-nav="orders" class="auth-only hidden">Orders</a>
+      <a href="#" data-nav="admin" class="admin-only hidden">Admin</a>
+      <a href="#" id="loginNav" data-nav="login">Login</a>
+      <a href="#" id="logoutNav" class="auth-only hidden">Logout (<span id="userName"></span>)</a>
+    </nav>
+  </div>
+</header>
+
+<main id="app"></main>
+
+<div id="toast" class="toast hidden"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
